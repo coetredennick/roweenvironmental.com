@@ -425,6 +425,47 @@ window.addEventListener('load', () => {
 });
 
 // ========================================
+// Video Play/Pause Button Handler
+// ========================================
+
+const aboutVideo = document.getElementById('aboutVideo');
+const videoPlayButton = document.getElementById('videoPlayButton');
+const videoPauseButton = document.getElementById('videoPauseButton');
+
+if (aboutVideo && videoPlayButton && videoPauseButton) {
+    // Play button click handler
+    videoPlayButton.addEventListener('click', () => {
+        aboutVideo.play();
+        videoPlayButton.classList.add('hidden');
+        videoPauseButton.classList.remove('hidden');
+    });
+
+    // Pause button click handler
+    videoPauseButton.addEventListener('click', () => {
+        aboutVideo.pause();
+        videoPauseButton.classList.add('hidden');
+        videoPlayButton.classList.remove('hidden');
+    });
+
+    // Show play button when video ends
+    aboutVideo.addEventListener('ended', () => {
+        videoPauseButton.classList.add('hidden');
+        videoPlayButton.classList.remove('hidden');
+    });
+
+    // Update buttons when video state changes
+    aboutVideo.addEventListener('play', () => {
+        videoPlayButton.classList.add('hidden');
+        videoPauseButton.classList.remove('hidden');
+    });
+
+    aboutVideo.addEventListener('pause', () => {
+        videoPauseButton.classList.add('hidden');
+        videoPlayButton.classList.remove('hidden');
+    });
+}
+
+// ========================================
 // Console Branding
 // ========================================
 

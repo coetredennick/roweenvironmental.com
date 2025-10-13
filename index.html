@@ -254,8 +254,24 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-image">
-                    <img src="dock-far.JPG" alt="Rowe Environmental professional waterfront management">
+                <div class="about-video">
+                    <video muted playsinline id="aboutVideo">
+                        <source src="better-montage480p-web.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="video-play-button" id="videoPlayButton" aria-label="Play video">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="white" stroke="none">
+                            <circle cx="12" cy="12" r="10" fill="rgba(56, 99, 96, 0.9)"/>
+                            <polygon points="10,8 16,12 10,16" fill="white"/>
+                        </svg>
+                    </button>
+                    <button class="video-pause-button hidden" id="videoPauseButton" aria-label="Pause video">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="white" stroke="none">
+                            <circle cx="12" cy="12" r="10" fill="rgba(56, 99, 96, 0.9)"/>
+                            <rect x="9" y="8" width="2" height="8" fill="white"/>
+                            <rect x="13" y="8" width="2" height="8" fill="white"/>
+                        </svg>
+                    </button>
                 </div>
                 <div class="about-content">
                     <p class="section-label">About Us</p>
