@@ -1,0 +1,24 @@
+{
+  "name": "roweenvironmental.com",
+  "version": "1.0.0",
+  "description": "Modern, professional website for Rowe Environmental Services featuring mechanical pond and shoreline cleanup services.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coetredennick/roweenvironmental.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/coetredennick/roweenvironmental.com/issues"
+  },
+  "homepage": "https://github.com/coetredennick/roweenvironmental.com#readme",
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0"
+  }
+}
